@@ -5,12 +5,14 @@ import { motion } from "framer-motion";
 import { ArrowRight, Play, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const EASE: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.12, duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { delay: i * 0.12, duration: 0.7, ease: EASE },
   }),
 };
 
@@ -147,7 +149,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 60, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ delay: 0.8, duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
+          transition={{ delay: 0.8, duration: 0.9, ease: EASE }}
           className="mt-20 relative"
         >
           <div className="relative max-w-3xl mx-auto">
