@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Zap, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
@@ -34,10 +35,14 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group" id="navbar-logo">
-          <div className="relative w-8 h-8 rounded-xl flex items-center justify-center overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600" />
-            <Zap className="w-4 h-4 text-white relative z-10 fill-white" />
-          </div>
+          <Image
+            src="/images/blackclap_logo.png"
+            alt="Blackclap Logo"
+            width={32}
+            height={32}
+            className="rounded-xl object-contain"
+            priority
+          />
           <span className="text-lg font-bold tracking-tight text-slate-800">
             Black<span className="gradient-text">clap</span>
           </span>

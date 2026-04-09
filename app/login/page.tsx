@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { motion } from "framer-motion";
-import { Eye, EyeOff, Zap, ArrowRight, Mail, Lock } from "lucide-react";
+import { Eye, EyeOff, ArrowRight, Mail, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -58,10 +59,14 @@ export default function LoginPage() {
             {/* Logo */}
             <div className="flex justify-center mb-6">
               <Link href="/" className="flex items-center gap-2" id="login-logo">
-                <div className="relative w-9 h-9 rounded-xl flex items-center justify-center overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600" />
-                  <Zap className="w-5 h-5 text-white relative z-10 fill-white" />
-                </div>
+                <Image
+                  src="/images/blackclap_logo.png"
+                  alt="Blackclap Logo"
+                  width={36}
+                  height={36}
+                  className="rounded-xl object-contain"
+                  priority
+                />
                 <span className="text-xl font-bold tracking-tight text-slate-800">
                   Black<span className="gradient-text">clap</span>
                 </span>

@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import { Zap, Globe, MessageCircle, Link2 } from "lucide-react";
+import { Globe, MessageCircle, Link2 } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -12,10 +13,13 @@ export default function Footer() {
           {/* Logo + Tagline */}
           <div className="flex flex-col items-center md:items-start gap-3">
             <Link href="/" className="flex items-center gap-2" id="footer-logo">
-              <div className="relative w-7 h-7 rounded-lg flex items-center justify-center overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600" />
-                <Zap className="w-3.5 h-3.5 text-white relative z-10 fill-white" />
-              </div>
+              <Image
+                src="/images/blackclap_logo.png"
+                alt="Blackclap Logo"
+                width={28}
+                height={28}
+                className="rounded-lg object-contain"
+              />
               <span className="text-base font-bold tracking-tight text-slate-800">
                 Black<span className="gradient-text">clap</span>
               </span>

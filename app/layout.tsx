@@ -7,11 +7,16 @@ export const metadata: Metadata = {
   description:
     "Blackclap is a modern social media platform for sharing moments, discovering new perspectives, and building meaningful connections in a vibrant community.",
   keywords: ["social media", "connect", "share", "community", "blackclap"],
+  icons: {
+    icon: "/images/blackclap_logo.png",
+    apple: "/images/blackclap_logo.png",
+  },
   openGraph: {
     title: "Blackclap — Connect, Share & Discover",
     description:
       "Share your moments, discover new perspectives, and build meaningful connections.",
     type: "website",
+    images: ["/images/blackclap_logo.png"],
   },
 };
 
