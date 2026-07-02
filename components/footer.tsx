@@ -32,10 +32,13 @@ export default function Footer() {
           {/* Links */}
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
             {[
-              { label: "Login",         href: "/login",  id: "footer-login-link" },
-              { label: "Sign Up",       href: "/signup", id: "footer-signup-link" },
-              { label: "Privacy Policy",href: "#",       id: "footer-privacy-link" },
-              { label: "Terms of Service", href: "#",    id: "footer-terms-link" },
+              { label: "Login",            href: "/login",                 id: "footer-login-link" },
+              { label: "Sign Up",          href: "/signup",                id: "footer-signup-link" },
+              { label: "Support",          href: "/support",               id: "footer-support-link" },
+              { label: "Community Guidelines", href: "/community-guidelines", id: "footer-guidelines-link" },
+              { label: "Privacy Policy",   href: "/privacy",               id: "footer-privacy-link" },
+              { label: "Terms of Service", href: "/terms",                 id: "footer-terms-link" },
+              { label: "Delete Account",   href: "/delete-account",        id: "footer-delete-link" },
             ].map((link) => (
               <Link
                 key={link.id}

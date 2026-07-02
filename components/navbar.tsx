@@ -20,6 +20,7 @@ export default function Navbar() {
   }, []);
 
   const isAuth = pathname === "/login" || pathname === "/signup";
+  const isHome = pathname === "/";
 
   return (
     <motion.header
@@ -49,7 +50,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        {!isAuth && (
+        {isHome && (
           <nav className="hidden md:flex items-center gap-8">
             <Link
               href="#features"
@@ -123,20 +124,24 @@ export default function Navbar() {
             className="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 px-6 pb-6 shadow-lg"
           >
             <div className="flex flex-col gap-4 pt-4">
-              <Link
-                href="#features"
-                onClick={() => setMobileOpen(false)}
-                className="text-sm text-slate-500 hover:text-slate-800 transition-colors font-medium"
-              >
-                Features
-              </Link>
-              <Link
-                href="#why-join"
-                onClick={() => setMobileOpen(false)}
-                className="text-sm text-slate-500 hover:text-slate-800 transition-colors font-medium"
-              >
-                Why Blackclap
-              </Link>
+              {isHome && (
+                <>
+                  <Link
+                    href="#features"
+                    onClick={() => setMobileOpen(false)}
+                    className="text-sm text-slate-500 hover:text-slate-800 transition-colors font-medium"
+                  >
+                    Features
+                  </Link>
+                  <Link
+                    href="#why-join"
+                    onClick={() => setMobileOpen(false)}
+                    className="text-sm text-slate-500 hover:text-slate-800 transition-colors font-medium"
+                  >
+                    Why Blackclap
+                  </Link>
+                </>
+              )}
               <div className="flex flex-col gap-2 pt-2 border-t border-slate-100">
                 <Link href="/login" id="mobile-login-link">
                   <Button

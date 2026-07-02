@@ -280,11 +280,11 @@ export default function SignupPage() {
         {/* Bottom text */}
         <p className="text-center text-slate-400 text-xs mt-6">
           By creating an account, you agree to our{" "}
-          <Link href="#" className="text-slate-500 hover:text-slate-700 transition-colors underline underline-offset-2">
+          <Link href="/terms" className="text-slate-500 hover:text-slate-700 transition-colors underline underline-offset-2">
             Terms
           </Link>{" "}
           and{" "}
-          <Link href="#" className="text-slate-500 hover:text-slate-700 transition-colors underline underline-offset-2">
+          <Link href="/privacy" className="text-slate-500 hover:text-slate-700 transition-colors underline underline-offset-2">
             Privacy Policy
           </Link>
         </p>
