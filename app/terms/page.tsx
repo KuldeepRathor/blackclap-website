@@ -14,7 +14,7 @@ export default function TermsPage() {
       accentWord="Service"
       subtitle="Please read these terms carefully. They govern your access to and use of Blackclap."
       lastUpdated="July 3, 2026"
-      showLegalNotice
+      // showLegalNotice
     >
       <p>
         These Terms of Service (&quot;Terms&quot;) form a binding agreement between you and

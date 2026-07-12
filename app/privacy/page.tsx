@@ -14,7 +14,7 @@ export default function PrivacyPage() {
       accentWord="Policy"
       subtitle="Your privacy matters. This policy explains what we collect, why we collect it, and the choices you have."
       lastUpdated="July 3, 2026"
-      showLegalNotice
+      // showLegalNotice
     >
       <p>
         This Privacy Policy describes how Blackclap (&quot;Blackclap&quot;,
