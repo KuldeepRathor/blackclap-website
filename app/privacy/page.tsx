@@ -86,6 +86,7 @@ export default function PrivacyPage() {
         </li>
         <li>To analyze usage and improve the Service.</li>
         <li>To comply with legal obligations.</li>
+        <li> ⁠To maintain and enhance the safety, security, and stability of the Services by identifying and addressing technical or security issues or problems (such as technical bugs and spam accounts), and detecting abuse, fraud, and illegal activity</li>
       </ul>
 
       <h2>3. How Your Content Is Stored</h2>
