@@ -36,6 +36,7 @@ export default function Footer() {
               { label: "Sign Up",          href: "/signup",                id: "footer-signup-link" },
               { label: "Support",          href: "/support",               id: "footer-support-link" },
               { label: "Community Guidelines", href: "/community-guidelines", id: "footer-guidelines-link" },
+              { label: "Child Safety",     href: "/child-safety",          id: "footer-child-safety-link" },
               { label: "Privacy Policy",   href: "/privacy",               id: "footer-privacy-link" },
               { label: "Terms of Service", href: "/terms",                 id: "footer-terms-link" },
               { label: "Delete Account",   href: "/delete-account",        id: "footer-delete-link" },
